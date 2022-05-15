@@ -5,6 +5,6 @@ COPY src /build/src
 RUN mvn clean package -DskipTests=true
 
 FROM openjdk:8-jre-alpine
-COPY --from=MAVEN_ENV /build/target/api-*.jar app.jar
+COPY --from=MAVEN_ENV /build/target/digitaltimbersaw-api-*.jar app.jar
 EXPOSE 81
 ENTRYPOINT ["java", "-jar","app.jar"]
