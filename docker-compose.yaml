@@ -6,12 +6,12 @@ networks:
       name: dt-api
 
 services:
-  hci-api-test: registry-intl.us-west-1.aliyuncs.com/oralcex/hci-api:latest
-    image:
+  dt-api:
+    image: justnbxgxdocker/digital-timbersaw-api:latest
     container_name: hci-api
     ports:
       - 8080:80
     volumes:
-      - /data/test/:/data/test/
+      - /data/prod/:/data/prod/
     environment:
-      SPRING_PROFILES_ACTIVE: test
+      SPRING_PROFILES_ACTIVE: master
