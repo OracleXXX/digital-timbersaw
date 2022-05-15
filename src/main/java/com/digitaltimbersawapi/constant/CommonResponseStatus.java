@@ -10,7 +10,10 @@ public enum CommonResponseStatus {
      **/
     SUCCESS(10000, "ok"),
     FAIL(10001, "server error"),
-    PARAMS_ERROR(20000, "params error"),;
+    PARAMS_ERROR(20000, "params error"),
+    CONTACT_US_SAVE_ERROR(702, "contact us save error"),
+    CONTACT_US_DELETE_ERROR(704, "contact us delete error"),
+    ;
 
 
     private int code;

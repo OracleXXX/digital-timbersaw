@@ -26,7 +26,6 @@ public class ContactUsEntity extends BaseEntity{
 
     private String name;
 
-
     private String organization;
 
     private String email;

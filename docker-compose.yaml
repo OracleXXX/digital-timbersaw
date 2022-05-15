@@ -1,0 +1,17 @@
+version: '3.5'
+
+networks:
+  default:
+    external:
+      name: dt-api
+
+services:
+  hci-api-test: registry-intl.us-west-1.aliyuncs.com/oralcex/hci-api:latest
+    image:
+    container_name: hci-api
+    ports:
+      - 8080:80
+    volumes:
+      - /data/test/:/data/test/
+    environment:
+      SPRING_PROFILES_ACTIVE: test
