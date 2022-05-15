@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "mail.subject",
+      "type": "java.lang.String",
+      "description": "Description for mail.subject."
+    },
+    {
+      "name": "mail.from",
+      "type": "java.lang.String",
+      "description": "Description for mail.from."
+    },
+    {
+      "name": "mail.to",
+      "type": "java.lang.String",
+      "description": "Description for mail.to."
+    },
+    {
+      "name": "upload.file.base-path",
+      "type": "java.lang.String",
+      "description": "Description for upload.file.base-path."
+    }
+  ] }
