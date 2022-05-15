@@ -19,6 +19,8 @@ spring:
     show-sql: true
   jackson:
     default-property-inclusion: non_absent
+    time-zone: UTC
+    date-format: yyyy-MM-dd HH:mm:ss
 
   mail:
     host: smtp.gmail.com

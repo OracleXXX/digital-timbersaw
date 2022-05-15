@@ -3,9 +3,12 @@ package com.digitaltimbersawapi.dto;
 import lombok.Data;
 
 import javax.persistence.Column;
+import java.util.Date;
 
 @Data
 public class ContactUsDto {
+
+    private Long id;
 
     private String name;
 
@@ -16,5 +19,7 @@ public class ContactUsDto {
     private String phone;
 
     private String content;
+
+    private Date createdAt;
 
 }

@@ -11,11 +11,11 @@ import javax.transaction.Transactional;
 
 public interface ContactUsRepository extends JpaRepository<ContactUsEntity, Long> {
 
-    @Query(value = "select * from contact_us where name like ?1 and is_delete = ?2", nativeQuery = true)
+    @Query(value = "select * from contact_us where name like ?1 and is_del = ?2", nativeQuery = true)
     Page<ContactUsEntity> findByNameLikeAndIsDel(Pageable pageable, String name, Integer isDel);
 
     @Transactional
     @Modifying
-    @Query(value = "update contact_us set is_delete = 1 where id = ?1", nativeQuery = true)
+    @Query(value = "update contact_us set is_del = 1 where id = ?1", nativeQuery = true)
     void logicDeleteById(Long id);
 }

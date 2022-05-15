@@ -33,4 +33,7 @@ public abstract class BaseEntity implements Serializable {
     @Column(name = "sort_num", columnDefinition = "INT(10) NOT NULL DEFAULT 1")
     private Integer sortNum;
 
+    @Column(name = "is_del", columnDefinition = "INT(2) NOT NULL DEFAULT 0")
+    private Integer IsDel;
+
 }
